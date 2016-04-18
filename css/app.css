@@ -578,7 +578,7 @@ xloading-bar
 -------------------------------- */
 .cd-headline.loading-bar span {
   display: inline-block;
-  padding: .2em 0;
+  padding: 10px 0;
 }
 .cd-headline.loading-bar .cd-words-wrapper {
   overflow: hidden;
@@ -623,7 +623,7 @@ xslide
 -------------------------------- */
 .cd-headline.slide span {
   display: inline-block;
-  padding: .2em 0;
+  padding: .10px 0;
 }
 .cd-headline.slide .cd-words-wrapper {
   overflow: hidden;
@@ -631,7 +631,7 @@ xslide
 }
 .cd-headline.slide b {
   opacity: 0;
-  top: .2em;
+  top: .10px;
 }
 .cd-headline.slide b.is-visible {
   top: 0;
@@ -761,7 +761,7 @@ xclip
 -------------------------------- */
 .cd-headline.clip span {
   display: inline-block;
-  padding: .2em 0;
+  padding: .10px 0;
 }
 .cd-headline.clip .cd-words-wrapper {
   overflow: hidden;

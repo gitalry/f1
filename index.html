@@ -19,42 +19,56 @@
     <link rel="stylesheet" href="css/app.css">
     <link rel="stylesheet" href="css/reset.css">
     <link rel="stylesheet" type="text/css" href="css/normalize.css" />
-		<link rel="stylesheet" type="text/css" href="css/demo.css" />
-		<link rel="stylesheet" type="text/css" href="css/component.css" />
+    <link rel="stylesheet" type="text/css" href="css/demo.css" />
+    <link rel="stylesheet" type="text/css" href="css/component.css" />
 
     <!-- CSS reset -->
 
     <script src="js/modernizr.js"></script>
     <!-- Modernizr -->
 
-    <title>Design</title>
+    <title>Gradeur Design Agency</title>
 </head>
 
-<body><div class="large-12">
-    <section class="section section--menu" id="Viola">
-				<span class="link-copy"></span>
-				<nav class="menu menu--viola">
-					<ul class="menu__list">
-						<li class="menu__item menu__item--current"><a href="#" class="menu__link ">Home</a></li>
-						<li class="menu__item"><a href="#" class="menu__link ">About</a></li>
-						<li class="menu__item"><a href="#" class="menu__link ">Blog</a></li>
-						<li class="menu__item "><a href="#" class="menu__link ">Portfolio</a></li>
-						<li class="menu__item"><a href="#" class="menu__link ">Members</a></li>
-                        <li class="menu__item "><a href="#" class="menu__link">Contact</a></li>
-					</ul>
-				</nav>
-			</section></div>
-  <!-- cd-intro -->
- <section class="cd-intro">
+<body>
+    <div class="row">
+        <section class="section section--menu" id="Viola">
+
+            <nav class="menu menu--viola">
+                <ul class="menu__list">
+                    <li class="menu__item menu__item--current"><a href="#" class="menu__link ">Home</a></li>
+                    <li class="menu__item"><a href="#About" class="menu__link ">About</a></li>
+                    <li class="menu__item"><a href="blog.html" class="menu__link ">Blog</a></li>
+                    <li class="menu__item "><a href="#Portfolio" class="menu__link ">Portfolio</a></li>
+                    <li class="menu__item"><a href="#Members" class="menu__link ">Members</a></li>
+                    <li class="menu__item "><a href="#Contact" class="menu__link">Contact</a></li>
+                </ul>
+            </nav>
+        </section>
+    </div>
+    <!-- cd-intro -->
+    <h1 align="center">Gradeur Design Agency</h1>
+
+    <section class="row cd-intro About" id="About">
+
         <h1 class="cd-headline letters scale">
-			<span>My favourite food is</span>
+			<span>We do worldclass</span>
 			<span class="cd-words-wrapper">
-				<b class="is-visible">pizza</b>
-				<b>sushi</b>
-				<b>steak</b>
+				<b class="is-visible">marketing</b>
+				<b>branding</b>
+				<b>design</b>
 			</span>
 		</h1>
+
     </section>
+
+<div class="row" id="About">
+   <div class="large-12" >
+
+
+
+    </div>
+    </div>
 
 
 
@@ -66,43 +80,43 @@
     <script src="js/jquery-2.1.1.js"></script>
     <script src="js/main.js"></script>
     <script src="js/classie.js"></script>
-		<script src="js/clipboard.min.js"></script>
-		<script>
-		(function() {
-			[].slice.call(document.querySelectorAll('.menu')).forEach(function(menu) {
-				var menuItems = menu.querySelectorAll('.menu__link'),
-					setCurrent = function(ev) {
-						ev.preventDefault();
+    <script src="js/clipboard.min.js"></script>
+    <script>
+        (function () {
+			[].slice.call(document.querySelectorAll('.menu')).forEach(function (menu) {
+                var menuItems = menu.querySelectorAll('.menu__link')
+                    , setCurrent = function (ev) {
+                        ev.preventDefault();
 
-						var item = ev.target.parentNode; // li
+                        var item = ev.target.parentNode; // li
 
-						// return if already current
-						if (classie.has(item, 'menu__item--current')) {
-							return false;
-						}
-						// remove current
-						classie.remove(menu.querySelector('.menu__item--current'), 'menu__item--current');
-						// set current
-						classie.add(item, 'menu__item--current');
-					};
+                        // return if already current
+                        if (classie.has(item, 'menu__item--current')) {
+                            return false;
+                        }
+                        // remove current
+                        classie.remove(menu.querySelector('.menu__item--current'), 'menu__item--current');
+                        // set current
+                        classie.add(item, 'menu__item--current');
+                    };
 
-				[].slice.call(menuItems).forEach(function(el) {
-					el.addEventListener('click', setCurrent);
-				});
-			});
+				[].slice.call(menuItems).forEach(function (el) {
+                    el.addEventListener('click', setCurrent);
+                });
+            });
 
-			[].slice.call(document.querySelectorAll('.link-copy')).forEach(function(link) {
-				link.setAttribute('data-clipboard-text', location.protocol + '//' + location.host + location.pathname + '#' + link.parentNode.id);
-				new Clipboard(link);
-				link.addEventListener('click', function() {
-					classie.add(link, 'link-copy--animate');
-					setTimeout(function() {
-						classie.remove(link, 'link-copy--animate');
-					}, 300);
-				});
-			});
-		})(window);
-		</script>
+			[].slice.call(document.querySelectorAll('.link-copy')).forEach(function (link) {
+                link.setAttribute('data-clipboard-text', location.protocol + '//' + location.host + location.pathname + '#' + link.parentNode.id);
+                new Clipboard(link);
+                link.addEventListener('click', function () {
+                    classie.add(link, 'link-copy--animate');
+                    setTimeout(function () {
+                        classie.remove(link, 'link-copy--animate');
+                    }, 300);
+                });
+            });
+        })(window);
+    </script>
     <!-- Resource jQuery -->
 </body>
 
